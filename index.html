@@ -4,10 +4,44 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Tetreez 0.1.0</title>
   </head>
   <body>
-    <div id="app"></div>
+    <section class="game" id="game">
+
+      <canvas
+        id="playground"
+        width="200"
+        height="400"
+        tabindex="0"
+      ></canvas>
+
+      <aside>
+        <div class="stats">
+          Lines cleared
+          <span id="stats-lines">0</span>
+        </div>
+        <div class="controls">
+          <button id="start-btn">Start</button>
+          <button id="stop-btn">Stop</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+      </aside>
+    </section>
+
+    <h2>TODO</h2>
+    <ul>
+      <li>Slide before settling</li>
+      <li>Increase speed</li>
+      <li>Show upcoming piece</li>
+      <li>Add score</li>
+      <li>Add rotation + translation on borders</li>
+      <li>Add keyboard control explanation</li>
+      <li>Add Game Over graphic</li>
+      <li>4x1 tetris bug</li>
+      <li>Keyboard Delay + Repeat?</li>
+    </ul>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
